@@ -1,4 +1,5 @@
 const React = require('react');
+const DefaultLayout = require('./layouts/Default');
 
 const capFirtLetter = {
   'textTransform': 'capitalize'
@@ -10,18 +11,18 @@ class Index extends React.Component {
     const elements = products.map((product, i) => {
       return(
         <li key={product._id}>
-      <a href={`/products/${product._id}`}>{product.name}</a><br/>
-      <a href={`/products/${product._id}`}><img src={product.img}/></a><br/>
-      </li>
+        {product.name}<br/>
+        <a href={`/products/${product._id}`}><img src={product.img}/></a><br/>
+        </li>
       )
     })
 
     return(
-      <>
-        <h1>Products</h1>
+      <DefaultLayout title={"Gigi's Outlet"} styles={[{key: 0, href: ''}, { key: 1, href: '/css/indexpage.css'}]}>
+        <h2>Our Products</h2>
         <ul>{elements}</ul>
         <a href="/products/new"><button>Add new Product</button></a>
-      </>
+      </DefaultLayout>
     )
   }
 }

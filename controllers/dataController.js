@@ -12,6 +12,18 @@ const dataController = {
         }
       })
   },
+  // new(req, res, next){
+  //     Product.create({}, (err, newProducts) => {
+  //       if(err){
+  //         res.status(404).send({
+  //           msg: err.message
+  //         })
+  //       } else {
+  //         res.locals.data.products = newProducts
+  //         next()
+  //       }
+  //     })
+  // },
   show(req, res, next){
     Product.findById(req.params.id, (err, editedProduct) => {
       if(err){
@@ -61,7 +73,7 @@ const dataController = {
     })
   },
   updateQty(req, res, next){
-    Product.findByIdAndUpdate(req.params.id, { $inc: {'qty': -1 } }, {new: true }, (err, response) => {
+    Product.findByIdAndUpdate(req.params.id, { $inc: {"qty": -1 } }, {new: true }, (err, response) => {
       if(err){
         res.status(404).send({
           msg: err.message

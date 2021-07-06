@@ -5,7 +5,8 @@ const dataController = require('./dataController');
 // Index
 router.get('/', dataController.index, viewController.index)
 //New
-// We have a statice file in public/products/new/index.htm
+// We have a statice file in public/products/new/index.html
+// router.get('/new', dataController.new, viewController.new)
 //Delete
 router.delete('/:id', dataController.destroy, viewController.redirectHome)
 //Update

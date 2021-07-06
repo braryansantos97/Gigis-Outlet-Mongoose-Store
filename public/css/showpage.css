@@ -1,0 +1,49 @@
+body{
+  color: white;
+  background-image: url("https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-size: cover;
+  text-align: center;
+}
+img{
+  border: solid;
+  border-color: white;
+  border-radius: 20px;
+  width: 800px;
+  height: 700px;
+}
+button {
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: #f9c1b1;
+  color: navy;
+  border-radius: 20px;
+  transition: ease-out 0.3s:
+  font-size: 2rem;
+  outline: none;
+  border: 6px solid #fb8085;
+  position: relative;
+  z-index: 1;
+}
+button:hover {
+  color: white;
+  cursor: pointer;
+}
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #fb8085;
+}
+button:hover:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  z-index: -1;
+}

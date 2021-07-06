@@ -6,6 +6,9 @@ const viewController = {
   show(req, res, next){
     res.render('Show', { product: res.locals.data.product })
   },
+  // new(req, res, next){
+  //   res.render('New', { product: res.locals.data.product })
+  // },
   edit(req, res, next){
     res.render('Edit', { product: res.locals.data.product })
   },
