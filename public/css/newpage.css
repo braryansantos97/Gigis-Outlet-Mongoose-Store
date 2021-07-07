@@ -1,8 +1,22 @@
 body{
   color: white;
-  background-image: url("https://images.pexels.com/photos/33545/sunrise-phu-quoc-island-ocean.jpg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-image: url("https://images.pexels.com/photos/1532771/pexels-photo-1532771.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
+}
+input{
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: inherit;
+  border-radius: 10px;
+  width: 400px;
+  height: 40px;
+  border: solid;
+  border-color: white;
+  border-radius: 10px;
 }
 button {
   width: 100px;

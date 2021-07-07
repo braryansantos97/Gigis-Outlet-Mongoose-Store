@@ -6,9 +6,6 @@ const viewController = {
   show(req, res, next){
     res.render('Show', { product: res.locals.data.product })
   },
-  // new(req, res, next){
-  //   res.render('New', { product: res.locals.data.product })
-  // },
   edit(req, res, next){
     res.render('Edit', { product: res.locals.data.product })
   },
@@ -18,8 +15,8 @@ const viewController = {
   redirectShow(req, res, next){
     res.redirect(RESOURCE_PATH + `/${req.params.id}`)
   },
-  redirectShow2(req, res, next){
-    res.redirect(RESOURCE_PATH + `/${req.params.id}`)
+  buy(req, res, next){
+    res.render('Buy', { product: res.locals.data.product })
   }
 }
 module.exports = viewController;

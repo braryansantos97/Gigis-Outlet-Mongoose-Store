@@ -1,8 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
 body{
   color: white;
-  background-image: url("https://images.pexels.com/photos/1642770/pexels-photo-1642770.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+  background-image: url("https://images.pexels.com/photos/268533/pexels-photo-268533.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
   background-size: cover;
   text-align: center;
+}
+h1{
+  font-family: 'Festive', cursive;
+  font-size: 80px
 }
 img{
   border: solid;
@@ -11,27 +17,30 @@ img{
   width: 200px;
   height: 100px;
 }
-ul {
+.products-container {
   display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  justify-content: space-evenly;
-
+  flex-flow: row wrap;
 }
-li{
-  color: white;
+
+.product{
+  margin: 10px;
+  height: 200px;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 button {
   width: 100px;
   height: 50px;
   border: none;
-  background-color: #f53844;
-  color: white;
+  background-color: #90d5ec;
+  color: black;
   border-radius: 20px;
   transition: ease-out 0.3s:
   font-size: 2rem;
   outline: none;
-  border: 6px solid #42378f;
+  border: 6px solid #0652c5;
   position: relative;
   z-index: 1;
 }
@@ -48,7 +57,9 @@ button:before {
   bottom: 0;
   opacity: 0;
   content: "";
-  background-color: #42378f;
+  /* background-color: #d4418e;
+  background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%); */
+  background-color: #0652c5;
 }
 button:hover:before {
   transition: 0.5s all ease;

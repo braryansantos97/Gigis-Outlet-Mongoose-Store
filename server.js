@@ -14,7 +14,7 @@ app.use((req, res, next) => {
   res.locals.data = {}
   next()
 });
-app.use(express.urlencoded({ extended: true })) // Without this half my code wont work because i need req.body
+app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'));
 app.use(express.static('public'));
 app.use('/products', require('./controllers/routeController'));
