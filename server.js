@@ -18,6 +18,4 @@ app.use(express.urlencoded({ extended: true }))
 app.use(methodOverride('_method'));
 app.use(express.static('public'));
 app.use('/products', require('./controllers/routeController'));
-app.listen(PORT, () => {
-  console.log('We in the building', PORT)
-})
+app.listen(PORT)

@@ -18,7 +18,7 @@ class Index extends React.Component {
     })
 
     return(
-      <DefaultLayout title={"Gigi's Outlet"} styles={[{key: 0, href: ''}, { key: 1, href: '/css/indexpage.css'}]}>
+      <DefaultLayout title={"Gigi's Outlet LLC"} styles={[{key: 0, href: ''}, { key: 1, href: '/css/indexpage.css'}]}>
         <h2>Our Products</h2>
         <div className="products-container">
           {elements}
