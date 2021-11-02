@@ -1,4 +1,5 @@
 const Product = require('../models/products')
+
 const dataController = {
   index(req, res, next){
       Product.find({}, (err, theProducts) => {
